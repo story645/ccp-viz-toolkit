@@ -1,0 +1,17 @@
+[data]
+name = gistemp
+file_type = netcdf
+file_path = /full_path_to/fields/gistemp_sat_anom_2.5deg.nc
+field = field
+txtlog = False
+create_folder = False
+
+[spatial_graph]
+projection = moll
+alt_projection = mill
+cmap = gist_heat_r
+center_cmap = RdBu_r
+create_folder = False
+
+[temporal_graph]
+create_folder = False

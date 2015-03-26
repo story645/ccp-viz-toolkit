@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="static/favicon.ico" /> 
+<link rel="stylesheet" type="text/css" href="static/style.css" />
+<link rel="stylesheet" type="text/css" href="static/jquery.autocomplete.css" />
+<title>ccpviz demo</title>
+</head>
+<body>
+    <label for="dataList" id="dataListLabel">Dataset:</label>
+    <select id="dataList"></select>    
+    <br />
+    <label for="algList" id="algListLabel">Algorithm:</label>
+    <select id="algList"></select>
+    <br />
+    <p id="validRange">
+    </p>
+    <br />
+    <label for="startTime" id="startTimeLabel">Start:</label>
+    <input id="startTime"> 
+    <label for="endTime" id="endTimeLabel">End:</label>
+    <input id="endTime">
+    <br />
+    <label for="topLat" id="topLatLabel">Top:</label>
+    <input id="topLat">
+    <label for="bottomLat" id="bottomLatLabel">Bottom:</label>
+    <input id="bottomLat">
+    <br />
+    <label for="leftLon" id="leftLonLabel">Left:</label>
+    <input id="leftLon">
+    <label for="rightLon" id="rightLonLabel">Right:</label>
+    <input id="rightLon">
+    <br />
+    <button id="graphButton">Graph</button>
+    <br />
+    <img id="loading" alt="please wait, the image is being generated" src="static/82.gif">
+    <img id="graph">
+    <script src=static/jquery-1.6.2.min.js></script>
+    <script src=static/jquery.autocomplete.pack.js></script>
+    <script src=static/menu.js></script>
+    <script src=static/graphs.js></script>
+    <noscript>Sorry, this website is mostly JavaScript!</noscript>
+</body>
+</html>
+

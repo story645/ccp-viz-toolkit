@@ -1,0 +1,24 @@
+Place all the config files for any data you want on the web. Any files
+with a .cfg extension and a data section will be parsed, so be careful
+with experimental configs. It's recommended to set txtlog and create_folder
+to off when creating a web app.
+
+
+The config file has three sections, data, spatial_graph, and
+temporal_graph. 
+
+data:
+There are two required parameters: 
+name = name of the data as it should appear in the drop down menu
+file_path = the absolute path to the data on the host system
+data also accepts any keyword argument supported by
+ccpdata/fromNetCDF.
+
+spatial_graph
+All the parameters are optional and based on the kwargs for
+SpatialGraph and CCPGraph, but projection is required for maps to show up in the
+final visualization.
+
+temporal_graph
+All the parameters are optional and based on the kwargs for
+TemporalGraph and CCPGraph.

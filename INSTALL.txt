@@ -1,0 +1,47 @@
+/**
+* ccpviz
+*
+* Hannah Aizenman, 2011-06
+*
+* haizenman@gc.cuny.edu
+*
+* http://www.opensource.org/licenses/bsd-license.php
+**/
+
+To obtain the src:
+hg clone https://ccp-viz-toolkit.googlecode.com/hg/ ccp-viz-toolkit
+
+Install the library as a standalone:
+
+dependencies: 
+Python 2.7.2
+numPy 1.6.0
+scipy 0.9.0
+coards 0.2.2
+matplotlib 1.0.0
+Basemap 1.0 
+# basemap requires geos>=3.1.1 which must be installed seperately
+
+install:
+python2.7 setup.py install
+
+To install the virtual_env (it's highly recommended you do this
+instead of chasing down libraries) 
+dependencies:
+Python2.7.2
+virtual_env 1.6.0
+geos>=3.1.1
+make sure the GEOS_DIR path is set:
+GEOS_DIR=$GEOS_DIR:path/to/geos
+export GEOS_DIR
+
+./setup_venv.py
+If python2.7 isn't in usr/lib or usr/local/lib, you may need to do:
+./setup_venv
+
+If you want to also use the webapp:
+https://code.google.com/p/ccp-viz-toolkit/wiki/WebDeploy
+
+And random troubleshooting:
+https://code.google.com/p/ccp-viz-toolkit/wiki/Troubleshooting
+
